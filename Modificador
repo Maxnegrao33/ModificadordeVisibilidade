@@ -1,0 +1,58 @@
+//Criar o objeto Aplicação.java
+
+public class Aplicacao {
+	public static void main(String [] args) {
+		ContaBancaria c = new ContaBancaria();
+		c.numConta = 54334;
+		c.ativa = true;
+		c.saldo = 5000; 
+		//Estas linhas de código não estão visíveis nesta classe
+	}
+}
+
+
+
+//outra aba
+
+public class ContaBancaria {
+	//É uma prática recomendada, atribuir todos os atributos como private – código encapsulado
+	private int numConta;
+	private boolean ativa;
+	private double saldo;
+
+	public int getNumConta() {
+		if (numConta > 0) {  //regra implementada dentro da conta bancária
+			return numConta;
+		}
+	}
+
+	public void setNumConta(int numConta) {
+		this.numConta = numConta;
+	}
+	
+	public boolean isAtiva() {
+		return ativa();
+	}
+	public void setAtiva(boolean ativa) {
+		this.ativa = ativa;
+	}
+
+	public double getSaldo() {
+		return saldo();
+	}
+	
+	/*public void getSaldo(double saldo) {
+		this.saldo = saldo;
+	} Este método foi inutilizado pois permite manipular o saldo externamente*/
+
+}
+
+public class Aplicacao {
+	public static void main(String [] args) {
+		ContaBancaria c = new ContaBancaria();
+		c.setnumConta = (54334(;
+		c.setAtiva = (true);
+		c.setSaldo = (5000); 
+		//Estas linhas de código não estão visíveis nesta classe
+	}
+} 
